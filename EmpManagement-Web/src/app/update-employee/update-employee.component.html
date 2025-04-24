@@ -1,0 +1,29 @@
+<html>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-8 col-10"> 
+                <h2 class="mb-4 text-center">Update Employee Form</h2>
+                <form (ngSubmit)="onSubmit()">
+                    <div class="mb-3 Formgroup">
+                        <label for="firstname" class="form-label">First Name</label>
+                        <input type="text" class="form-control border-2" name="firstname" [(ngModel)]="employee.firstname">
+                    </div>
+                    <div class="mb-3 Formgroup">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" class="form-control border-2" name="lastname" [(ngModel)]="employee.lastname">
+                    </div>
+                    <div class="mb-3 Formgroup">
+                        <label for="salary" class="form-label">Salary</label>
+                        <input type="number" class="form-control border-2" name="salary" [(ngModel)]="employee.salary">
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
